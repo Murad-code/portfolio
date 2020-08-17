@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import Projects from './components/projects/Projects.js';
 import Contact from './components/Contact.js';
+import Navbar from './components/navbar/Navbar';
 // import ContactApi from './components/ContactApi';
 
 function App() {
@@ -38,47 +39,7 @@ function App() {
     <div className="App">
       {/* <ContactApi /> */}
       <div className="nav-loadingtransition" data-aos="fade-right">
-        <nav className="navbar">
-          <ul className="navbar-nav">
-            <li className="logo">
-              <div></div>
-            </li>
-            <li className="nav-item">
-              <a href="#Home" className="nav-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="36px" height="36px"><path d="M0 0h24v24H0z" fill="none" /><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" /></svg>
-                <span className="link-text">Home</span>
-              </a>
-            </li >
-            <li className="nav-item">
-              <a href="#AboutMe" className="nav-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="36px" height="36px"><path d="M0 0h24v24H0z" fill="none" /><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" /></svg>
-                <span className="link-text">About Me</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#Projects" className="nav-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="36px" height="36px"><path d="M0 0h24v24H0z" fill="none" /><path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z" /></svg>
-                <span className="link-text">Projects</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#Contact" className="nav-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="36px" height="36px"><path d="M0 0h24v24H0z" fill="none" /><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z" /></svg>
-                <span className="link-text">Contact</span>
-              </a>
-            </li>
-            {/* <li className="nav-item">
-            <a href="#GitHub" className="nav-link">
-            </a>
-            <span className="link-text">GitHub</span>
-          </li>
-          <li className="nav-item">
-            <a href="#Email" className="nav-link">
-            </a>
-            <span className="link-text">Email</span>
-          </li> */}
-          </ul>
-        </nav>
+        <Navbar />
       </div>
 
       <main className="container" data-aos="fade-down">
