@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import './Navbar.scss';
 
 import {ReactComponent as HomeIcon} from './Home.svg';
 import {ReactComponent as AboutMeIcon} from './AboutMe.svg';
@@ -6,9 +7,9 @@ import {ReactComponent as ProjectsIcon} from './Projects.svg';
 import {ReactComponent as ContactIcon} from './Contact.svg';
 
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
-    <nav className="navbar">
+    <nav className={props.onLandingPage ? "navbar-home" : "navbar"}>
       <ul className="navbar-nav">
         <li className="logo">
           <div></div>

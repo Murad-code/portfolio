@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.scss';
 import Projects from './components/projects/Projects.js';
 import Contact from './components/Contact.js';
 import Navbar from './components/navbar/Navbar';
+import Scrolldown from './components/scrolldown/scrolldown';
 // import ContactApi from './components/ContactApi';
 
 function App() {
+  const [onLandingPage, changeStatus] = useState(true)
+
+  const check = (e) => {
+    const element = document.getElementById('container');
+    if (element.scrollTop > 400) {
+      changeStatus(false);
+    } else {
+      changeStatus(true);
+    }
+  }
+
   const projectCards = [
     {
       title: 'Food-Finder',
@@ -38,19 +50,19 @@ function App() {
   return (
     <div className="App">
       {/* <ContactApi /> */}
-      <div className="nav-loadingtransition" data-aos="fade-right">
-        <Navbar />
-      </div>
-
-      <main className="container" data-aos="fade-down">
+      <nav className="nav-loadingtransition" data-aos="fade-right">
+        <Navbar onLandingPage={onLandingPage} />
+      </nav>
+      
+      <main id="container" className="container" data-aos="fade-down" onScroll={check}>
         <div id="Home" className="Home section">
           <div className="title">
             <div className="title-text">
               <h1>Hi, I'm Murad.</h1>
               <h2>I'm a 2nd year Computer Science student at Brunel University</h2>
             </div>
+            <Scrolldown />
           </div>
-
         </div>
         <div id="AboutMe" className="AboutMe section" >
           <div className="section-title">
@@ -86,6 +98,7 @@ function App() {
           <Contact />
         </div> */}
       </main>
+
     </div>
   );
 }
