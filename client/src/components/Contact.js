@@ -39,59 +39,62 @@ export default function SignIn() {
     }
 
     return (
-        <Container component="main" maxWidth="xs">
-            <CssBaseline />
-            <div className={classes.paper}>
-                <Avatar className={classes.avatar}>
-                    <LockOutlinedIcon />
-                </Avatar>
-                <Typography component="h1" variant="h5">
-                    Contact Me
+        <div id="Contact" className="Contact section card">
+            <Container component="main" maxWidth="xs">
+                <CssBaseline />
+                <div className={classes.paper}>
+                    <Avatar className={classes.avatar}>
+                        <LockOutlinedIcon />
+                    </Avatar>
+                    <Typography component="h1" variant="h5">
+                        Contact Me
         </Typography>
-                <form className={classes.form} noValidate onSubmit={handleSubmit(onSubmit)}>
-                    <TextField
-                        margin="normal"
-                        inputRef={register}
-                        required
-                        fullWidth
-                        id="name"
-                        name="name"
-                        label="Name"
-                    // autoFocus note: don't use causes automatically scrolling down to contact ignoring home page
-                    />
-                    <TextField
-                        margin="normal"
-                        inputRef={register}
-                        required
-                        fullWidth
-                        id="email"
-                        name="email"
-                        label="Email Address"
+                    <form className={classes.form} noValidate onSubmit={handleSubmit(onSubmit)}>
+                        <TextField
+                            margin="normal"
+                            inputRef={register}
+                            required
+                            fullWidth
+                            id="name"
+                            name="name"
+                            label="Name"
+                        // autoFocus note: don't use causes automatically scrolling down to contact ignoring home page
+                        />
+                        <TextField
+                            margin="normal"
+                            inputRef={register}
+                            required
+                            fullWidth
+                            id="email"
+                            name="email"
+                            label="Email Address"
 
-                    />
-                    <TextField
-                        margin="normal"
-                        inputRef={register}
-                        required
-                        fullWidth
-                        variant="outlined"
-                        multiline="true"
-                        id="message"
-                        name="message"
-                        label="Message"
-                    />
-                    <Button
-                        type="submit"
-                        fullWidth
-                        variant="contained"
-                        color="primary"
-                        className={classes.submit}
-                    >
-                        Send
+                        />
+                        <TextField
+                            margin="normal"
+                            inputRef={register}
+                            required
+                            fullWidth
+                            variant="outlined"
+                            multiline="true"
+                            id="message"
+                            name="message"
+                            label="Message"
+                        />
+                        <Button
+                            type="submit"
+                            fullWidth
+                            variant="contained"
+                            color="primary"
+                            className={classes.submit}
+                        >
+                            Send
                     </Button>
-                </form>
-            </div>
-        </Container>
+                    </form>
+                </div>
+            </Container>
+        </div>
+
 
     );
 }

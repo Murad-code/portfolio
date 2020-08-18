@@ -1,0 +1,48 @@
+$bg-primary: #003554;
+$bg-secondary: #f5f5f5;
+$bg-ternary: #e1e3e6;
+$background: #fafafa;
+$transition-speed: 400ms;
+
+$p1: rgb(46,54,65);
+$p2: rgb(233,240,244);
+$p3: #F7F8FB;
+$p4: rgb(26,188,156);
+$p5: rgb(22,160,133);
+$p6: #225CB2;
+
+.Home {
+    margin-top: 0rem;
+    position: relative;
+    opacity: 1;
+    padding: 0;
+    margin-bottom: 8rem;
+  
+    .title {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      color: white;
+      // border: 1px solid red;    
+      background-color: $bg-primary;
+  
+      .title-text {
+        margin-left: 3rem;
+        h1 {
+          font-size: 8rem;
+          font-family: 'Montserrat', sans-serif;
+          padding: 0;
+          margin: 0;
+          margin-top: 10rem;
+          margin-left: 3rem;
+          line-height: normal;
+          color: white;
+          text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 5px 15px rgba(0,0,0,.5);
+        }
+        h2 {
+          margin-left: 3rem;
+          font-size: 2rem;
+        }
+      }
+    }
+  }

@@ -1,9 +1,10 @@
 import React from "react";
+import './Projects.scss';
 
 export default ({ projectCards }) => {
 
   return (
-    <div>
+    <div id="Projects" className="Projects section" >
       <div className="section-title">
         <h1>Projects</h1>
       </div>
