@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import './Navbar.scss';
 
 import {ReactComponent as HomeIcon} from './Home.svg';

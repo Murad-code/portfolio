@@ -11,6 +11,39 @@ $p4: rgb(26,188,156);
 $p5: rgb(22,160,133);
 $p6: #225CB2;
 
+.Modal {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+
+  .Backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+  
+    .carousel-container {
+      margin: 5rem 10rem;
+    
+      .carousel {
+        background-color: black;
+        display: inline-block;
+      
+        img {
+          object-fit: contain;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
 .Projects {
     margin-top: 3rem;
     color: black;
@@ -59,6 +92,9 @@ $p6: #225CB2;
           height: 20rem;
           object-fit: contain;
           
+          &:hover {
+            cursor: pointer;
+          }
         }
   
         .btn {
