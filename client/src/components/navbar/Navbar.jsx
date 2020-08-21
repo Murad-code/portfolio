@@ -8,6 +8,9 @@ import {ReactComponent as ContactIcon} from './Contact.svg';
 
 
 export default function Navbar(props) {
+
+  
+
   return (
     <nav className={props.onLandingPage ? "navbar-home" : "navbar"}>
       <ul className="navbar-nav">

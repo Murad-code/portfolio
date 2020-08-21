@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import './App.scss';
 import Home from './components/Home/Home.jsx';
 import Navbar from './components/Navbar/Navbar';
@@ -12,11 +12,11 @@ function App() {
   const [onLandingPage, changeStatus] = useState(true)
 
   const check = (e) => {
-    // const element = document.getElementById('container');
-    if (e.target.scrollTop > 400) {
-      changeStatus(false);
+    const element = document.getElementById('container');
+    if (element.scrollTop > 400) {
+      // changeStatus(false);
     } else {
-      changeStatus(true);
+      // changeStatus(true);
     }
   }
 
@@ -26,7 +26,7 @@ function App() {
       <nav className="nav-loadingtransition" data-aos="fade-right">
         <Navbar onLandingPage={onLandingPage} />
       </nav>
-      <main id="container" className="container" data-aos="fade-down" onScroll={check}>
+      <main id="container" className="container" data-aos="fade-down" >
         <Home />
         <AboutMe />
         <Projects />

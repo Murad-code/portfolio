@@ -8,19 +8,33 @@ export default function Projects() {
   const [images, setImages] = useState([]);
 
   const closeBackdrop = (e) => {
-    changeStatus(false)
-  }
+    changeStatus(false);
+  };
 
-  const ModalComponent = () => {
+  const CarouselComponent = () => {
     return (
-      <div className="Modal">
-        <div className="Backdrop" onClick={closeBackdrop}>
-          <div className="carousel-container" onClick={(e) => e.stopPropagation() }>
-            <Carousel className="carousel">
-              <img src={require(`${images[0]}`)} alt="img" />
-              <img src={require(`${images[1]}`)} alt="img" />
-            </Carousel>
-          </div>
+      <Carousel className="carousel">
+        <img src={require(`${images[0]}`)} alt="img" />
+        <img src={require(`${images[1]}`)} alt="img" />
+      </Carousel>
+    );
+  };
+
+  const ModalComponent = ({ title, image, description }) => {
+    return (
+      <div className="Modal" onClick={closeBackdrop}>
+        <div
+          className="carousel-container"
+          onClick={(e) => e.stopPropagation()}
+        >
+          {/* <CarouselComponent /> */}
+          <Carousel className="carousel">
+            <video className="video" controls>
+              <source src={require(`${images[2]}`)} type="video/mp4" />
+            </video>
+            <img src={require(`${images[0]}`)} alt="img" />
+            <img src={require(`${images[1]}`)} alt="img" />
+          </Carousel>
         </div>
       </div>
     );
@@ -50,7 +64,14 @@ export default function Projects() {
             Read more
           </a>
         </div>
-        {isOpen ? <ModalComponent /> : null}
+        {isOpen ? (
+          <ModalComponent
+            title={title}
+            image={image}
+            description={description}
+          />
+        ) : null}
+        {/* <ModalComponent title={title} image={image} description={description} closeBackdrop={closeBackdrop} isOpen={isOpen}/> */}
       </div>
     ));
 
@@ -70,31 +91,52 @@ const projectCards = [
   {
     id: 1,
     title: "Food-Finder",
-    image: ["./images/Food-finder/1.png", "./images/Food-finder/2.png"],
+    image: [
+      "./images/Food-finder/1.png",
+      "./images/Food-finder/2.png",
+      "./images/Food-finder/3.mp4",
+    ],
     description: "description",
   },
   {
     id: 2,
     title: "Sorting Algorithm Visualiser",
-    image: ["./images/Sorting-visualiser.png", "./images/Food-finder/2.png"],
+    image: [
+      "./images/Sorting-visualiser/1.png",
+      "./images/Sorting-visualiser/2.png",
+      "./images/Sorting-visualiser/3.mp4",
+    ],
     description: "description",
   },
   {
     id: 3,
     title: "Expense Tracker",
-    image: ["./images/Expense-tracker.png", "./images/Food-finder/2.png"],
+    image: [
+      "./images/Expense-tracker/1.png",
+      "./images/Expense-tracker/2.png",
+      "./images/Expense-tracker/3.mp4",
+    ],
     description: "description",
   },
   {
     id: 4,
-    title: "Finch Robot",
-    image: ["./images/Finch-robot.png", "./images/Food-finder/2.png"],
+    title: "Projectile Motion",
+    image: [
+      "./images/Projectile-motion/1.png",
+      "./images/Projectile-motion/2.png",
+      "./images/Projectile-motion/3.mp4",
+    ],
     description: "description",
   },
   {
     id: 5,
-    title: "Projectile Motion",
-    image: ["./images/Projectile-motion.png", "./images/Food-finder/2.png"],
+    title: "Finch Robot",
+    image: [
+      "./images/Finch-robot/1.png",
+      "./images/Finch-robot/2.png",
+      "./images/Finch-robot/3.mp4",
+    ],
     description: "description",
   },
+
 ];
