@@ -13,6 +13,12 @@ $p6: #225CB2;
 
 .App {
   background-color: $background;
+  text-align: center;
+
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 body {

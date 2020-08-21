@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './Navbar.scss';
 
 import {ReactComponent as HomeIcon} from './Home.svg';
@@ -9,10 +9,30 @@ import {ReactComponent as ContactIcon} from './Contact.svg';
 
 export default function Navbar(props) {
 
-  
+  let listener = null
+  const [scrollState, setScrollState] = useState(true)
+
+  useEffect(() => {
+    const element = document.getElementById('App')
+    listener = element.addEventListener("scroll", e => {
+      var scrolled = element.scrollTop
+      if (scrolled >= 400) {
+        if (scrollState !== false) {
+          setScrollState(false)
+        }
+      } else {
+        if (scrollState !== true) {
+          setScrollState(true)
+        }
+      }
+    })
+    return () => {
+      document.removeEventListener("scroll", listener)
+    }
+  }, [scrollState])
 
   return (
-    <nav className={props.onLandingPage ? "navbar-home" : "navbar"}>
+    <nav className={scrollState ? "navbar-home" : "navbar"}>
       <ul className="navbar-nav">
         <li className="logo">
           <div></div>
