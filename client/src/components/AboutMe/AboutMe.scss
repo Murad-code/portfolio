@@ -4,32 +4,30 @@ $bg-ternary: #e1e3e6;
 $background: #fafafa;
 $transition-speed: 400ms;
 
-$p1: rgb(46,54,65);
-$p2: rgb(233,240,244);
-$p3: #F7F8FB;
-$p4: rgb(26,188,156);
-$p5: rgb(22,160,133);
-$p6: #225CB2;
+$p1: rgb(46, 54, 65);
+$p2: rgb(233, 240, 244);
+$p3: #f7f8fb;
+$p4: rgb(26, 188, 156);
+$p5: rgb(22, 160, 133);
+$p6: #225cb2;
 
 .AboutMe {
-    // min-height: 80vh;
-    color: black;
-    margin-top: 100vh;
-  
+  // min-height: 80vh;
+  color: black;
+  margin-top: 100vh;
+  margin-bottom: 4rem;
+
+  .card {
+    padding-top: 2rem;
+    // background-color: $bg-primary;
     .text {
-      background-size: cover;
-      text-align: center;
-    }
-  
-    .skills {
-      border-radius: 0.5rem;
-      margin: 0rem 1rem;
-      display: flex;
-    }
-    .skills-child {
-      width: 50%;
-    } 
-    .skills-border {
-      border-right: 1px solid $p2;
+
+      font-family: Verdana, Geneva, Tahoma, sans-serif;;
+      padding: 0rem 1rem;
+      text-align: left;
+      line-height: 1.2;
+      margin: 0;
+
     }
   }
+}

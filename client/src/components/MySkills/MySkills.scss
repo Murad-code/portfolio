@@ -1,0 +1,54 @@
+$bg-primary: #003554;
+$bg-secondary: #f5f5f5;
+$bg-ternary: #e1e3e6;
+$background: #fafafa;
+$transition-speed: 400ms;
+
+$p1: rgb(46, 54, 65);
+$p2: rgb(233, 240, 244);
+$p3: #f7f8fb;
+$p4: rgb(26, 188, 156);
+$p5: rgb(22, 160, 133);
+$p6: #225cb2;
+
+
+.MySkills {
+  border: 1px solid pink;
+  background-color: $bg-primary;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .section {
+    scroll-snap-align: center;
+    margin-top: 0;
+  }
+  .section-title {
+    h1 {
+      color: white;
+      opacity: 1;
+    }
+  }
+  .card {
+    background-color: $bg-primary;
+    color: white;
+  }
+}
+
+.skills {
+  display: flex;
+  margin-bottom: 1rem;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .left {
+    padding-top: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .right {
+    padding-top: 1rem;
+  }
+}

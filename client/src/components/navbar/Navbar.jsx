@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import './Navbar.scss';
 
-import {ReactComponent as HomeIcon} from './Home.svg';
-import {ReactComponent as AboutMeIcon} from './AboutMe.svg';
-import {ReactComponent as ProjectsIcon} from './Projects.svg';
-import {ReactComponent as ContactIcon} from './Contact.svg';
+import {ReactComponent as HomeIcon} from './icons/Home.svg';
+import {ReactComponent as AboutMeIcon} from './icons/AboutMe.svg';
+import {ReactComponent as MySkillsIcon} from './icons/MySkills.svg';
+import {ReactComponent as ProjectsIcon} from './icons/Projects.svg';
+import {ReactComponent as ContactIcon} from './icons/Contact.svg';
 
 
 export default function Navbar(props) {
@@ -47,6 +48,12 @@ export default function Navbar(props) {
           <a href="#AboutMe" className="nav-link">
             <AboutMeIcon />
             <span className="link-text">About Me</span>
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="#MySkills" className="nav-link">
+            <MySkillsIcon />
+            <span className="link-text">My Skills</span>
           </a>
         </li>
         <li className="nav-item">

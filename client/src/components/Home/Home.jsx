@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.scss';
-import Scrolldown from '../ScrollDown/scrolldown';
+import Scrolldown from './ScrollDown/scrolldown';
 
 export default function home() {
     return (
