@@ -13,7 +13,7 @@ $p6: #225cb2;
 
 .Modal {
   box-sizing: border-box;
-  border: 1px solid green;
+  // border: 1px solid green;
   z-index: 10;
   position: absolute;
   top: 0;
@@ -90,7 +90,7 @@ $p6: #225cb2;
       }
 
       .project-description {
-        border: 1px solid pink;
+        // border: 1px solid pink;
         text-align: left;
         padding-left: 1rem;
         overflow: scroll;

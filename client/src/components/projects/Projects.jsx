@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "./Projects.scss";
 import Carousel from "nuka-carousel";
 
-import { ReactComponent as FoodFinderDescription } from './descriptions/Food-Finder';
-
 export default function Projects() {
   const [isOpen, changeStatus] = useState(false);
   const [title, setTitle] = useState();
