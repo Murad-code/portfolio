@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.scss';
 import Home from './components/Home/Home.jsx';
-import Navbar from './components/Navbar/Navbar';
-import AboutMe from './components/AboutMe/AboutMe';
-import MySkills from './components/MySkills/MySkills';
-import Projects from './components/Projects/Projects';
-import Contact from './components/Contact.js';
+import Navbar from './components/Navbar/Navbar.jsx';
+import AboutMe from './components/AboutMe/AboutMe.jsx';
+import MySkills from './components/MySkills/MySkills.jsx';
+import Projects from './components/Projects/Projects.jsx';
 
 function App() {
   return (
