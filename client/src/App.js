@@ -9,8 +9,8 @@ import Projects from './components/Projects/Projects.jsx';
 function App() {
   return (
     <div id="App" className="App" data-aos="fade-down" >
-      <Home />
       <Navbar />
+      <Home />
       <AboutMe />
       <MySkills />
       <Projects />
