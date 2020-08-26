@@ -12,26 +12,26 @@ $p5: rgb(22, 160, 133);
 $p6: #225cb2;
 
 .Modal {
+  box-sizing: border-box;
+  border: 1px solid green;
   z-index: 10;
   position: absolute;
   top: 0;
   left: 0;
+  // right: 0;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: rgba(0, 0, 0, 0.35);
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .carousel-container {
-    margin: 5rem 10rem;
-    
+
     .carousel {
       // border: 1px solid red;
-      min-height: 40vh;
-      min-width: 60vh;
+      min-width: 90vw;
       background-color: black;
-      // display: inline-block;
 
       img {
         object-fit: contain;
@@ -47,11 +47,8 @@ $p6: #225cb2;
       }
       .video-card {
         object-fit: stretch;
-        // height: 100%;
-        // max-height: stretch;
-        // max-width: stretch;
-      }
 
+      }
     }
   }
 }
@@ -61,20 +58,19 @@ $p6: #225cb2;
   color: black;
   min-height: 80vh;
 
-  .project-list {
-    // border: 1px solid red;
+  .card {
     background-color: white;
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
-    overflow-y: scroll;
-    max-height: 90vh;
     margin-top: 0;
+    font-size: 0.9rem;
+    // overflow-y: scroll;
     // scroll-snap-type: y mandatory;
 
     .project-card {
-      // border: 1px solid blue;
-      width: 30rem;
+      max-width: 30rem;
+      min-height: 30rem;
       border-radius: 0.5rem;
       margin: 1.5rem 0.2rem;
       transition: 0.3s;
@@ -94,15 +90,16 @@ $p6: #225cb2;
       }
 
       .project-description {
+        border: 1px solid pink;
         text-align: left;
         padding-left: 1rem;
+        overflow: scroll;
       }
 
       .project-image {
-        background-color: white;
-        width: 30rem;
-        height: 20rem;
-        object-fit: contain;
+        // width: 100%;
+        height: 60%;
+        // object-fit: contain;
 
         &:hover {
           cursor: pointer;
@@ -127,3 +124,17 @@ $p6: #225cb2;
     }
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+  .Projects {
+    .card {
+      padding: 1rem;
+      font-size: .85rem;
+      .project-card {
+        min-height: 0;
+      }
+    }
+  }
+}
+

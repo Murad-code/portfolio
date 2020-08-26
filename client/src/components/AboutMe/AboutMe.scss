@@ -12,16 +12,17 @@ $p5: rgb(22, 160, 133);
 $p6: #225cb2;
 
 .AboutMe {
-  // min-height: 80vh;
+  min-height: 80vh;
   color: black;
   margin-top: 100vh;
   margin-bottom: 4rem;
 
   .card {
-    padding-top: 2rem;
+    // border: 1px solid red;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     // background-color: $bg-primary;
-    .text {
-
+    p {
       font-family: Verdana, Geneva, Tahoma, sans-serif;;
       padding: 0rem 1rem;
       text-align: left;

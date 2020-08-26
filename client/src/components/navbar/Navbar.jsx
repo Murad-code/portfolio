@@ -1,36 +1,42 @@
 import React, { useState, useEffect } from "react";
-import './Navbar.scss';
+import "./Navbar.scss";
 
-import {ReactComponent as HomeIcon} from './icons/Home.svg';
-import {ReactComponent as AboutMeIcon} from './icons/AboutMe.svg';
-import {ReactComponent as MySkillsIcon} from './icons/MySkills.svg';
-import {ReactComponent as ProjectsIcon} from './icons/Projects.svg';
-import {ReactComponent as ContactIcon} from './icons/Contact.svg';
-
+import { ReactComponent as HomeIcon } from "./icons/Home.svg";
+import { ReactComponent as AboutMeIcon } from "./icons/AboutMe.svg";
+import { ReactComponent as MySkillsIcon } from "./icons/MySkills.svg";
+import { ReactComponent as ProjectsIcon } from "./icons/Projects.svg";
+import { ReactComponent as ContactIcon } from "./icons/Contact.svg";
 
 export default function Navbar(props) {
+  let listener = null;
+  const [scrollState, setScrollState] = useState(true);
 
-  let listener = null
-  const [scrollState, setScrollState] = useState(true)
-
+  // Responsible for changing navbar background on scroll
   useEffect(() => {
-    const element = document.getElementById('App')
-    listener = element.addEventListener("scroll", e => {
-      var scrolled = element.scrollTop
-      if (scrolled >= 400) {
-        if (scrollState !== false) {
-          setScrollState(false)
-        }
-      } else {
-        if (scrollState !== true) {
-          setScrollState(true)
+    const element = document.getElementById("App");
+    listener = element.addEventListener("scroll", (e) => {
+      var scrolled = element.scrollTop;
+
+      if (window.innerWidth > 600) {
+        if (scrolled < 600 || (scrolled > 1100 && scrolled < 1900)) {
+          setScrollState(true);
+        } else {
+          setScrollState(false);
         }
       }
-    })
+
+      if (window.innerWidth < 600) {
+        if (scrolled < 600 || (scrolled > 1700 && scrolled < 3400)) {
+          setScrollState(true);
+        } else {
+          setScrollState(false);
+        }
+      }
+    });
     return () => {
-      document.removeEventListener("scroll", listener)
-    }
-  }, [scrollState])
+      document.removeEventListener("scroll", listener);
+    };
+  }, [scrollState]);
 
   return (
     <nav className={scrollState ? "navbar-home" : "navbar"}>

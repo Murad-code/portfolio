@@ -17,12 +17,13 @@ $p6: #225CB2;
 
   height: 100vh;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll-behavior: smooth;
 }
 
 body {
-  height: 100vh;
+  // height: 100vh;
+  // border: 1px solid red;
   h1,
   h2,
   h3 {
@@ -32,16 +33,6 @@ body {
     text-align: center;
     font-weight: bold;
   }
-}
-
-.container {
-  text-align: center;
-  background-color: $background;
-
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
 }
 
 .section {
@@ -72,13 +63,23 @@ body {
   min-height: 60vh;
 }
 
-
-
-
 .Contact {
   min-height: 70vh;
   background-color: white;
   .makeStyles-paper-1 {
     padding-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section {
+    padding-left: 6rem;
+    padding-right: 1rem;
+  }
+  .navbar-home {
+    width: 2rem;
+  }
+  .navbar { 
+    width: 2rem;
   }
 }

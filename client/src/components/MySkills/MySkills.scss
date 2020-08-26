@@ -11,44 +11,71 @@ $p4: rgb(26, 188, 156);
 $p5: rgb(22, 160, 133);
 $p6: #225cb2;
 
-
 .MySkills {
-  border: 1px solid pink;
+  // border: 1px solid pink;
   background-color: $bg-primary;
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .section {
-    scroll-snap-align: center;
-    margin-top: 0;
-  }
+  min-height: 100vh;
+
   .section-title {
     h1 {
       color: white;
       opacity: 1;
+      // text-align: left;
     }
   }
-  .card {
-    background-color: $bg-primary;
-    color: white;
+
+  .skills {
+    // border: 1px solid red;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    // flex-direction: column;
+    // margin-bottom: 1rem;
+    
+    .card {
+      background-color: $bg-primary;
+      color: white;
+      width: 100%;
+    }
+
+    li {
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      font-size: 1.7rem;
+    }
+
+    .list {
+      padding-left: 4rem;
+      line-height: 2;
+      text-align: left;
+      list-style-type: "-";
+      text-indent: 1rem;
+      padding-top: 1rem;
+    }
+
+    .left {
+      z-index: 3;
+      padding-top: 1rem;
+      margin-right: -1.5rem;
+    }
+    .middle {
+      z-index: 2;
+      padding-top: 1rem;
+      margin-right: -1.5rem;
+    }
+    .right {
+      z-index: 1;
+      padding-top: 1rem;
+    }
   }
 }
 
-.skills {
-  display: flex;
-  margin-bottom: 1rem;
+@media only screen and (max-width: 780px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
 
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  .left {
-    padding-top: 1rem;
-    margin-right: 1rem;
-  }
-  
-  .right {
-    padding-top: 1rem;
   }
 }
