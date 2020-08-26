@@ -11,15 +11,6 @@ export default function Projects() {
     changeStatus(false);
   };
 
-  const CarouselComponent = () => {
-    return (
-      <Carousel className="carousel">
-        <img src={require(`${images[0]}`)} alt="img" />
-        <img src={require(`${images[1]}`)} alt="img" />
-      </Carousel>
-    );
-  };
-
   const ModalComponent = ({ title, image, description }) => {
     return (
       <div className="Modal" onClick={closeBackdrop}>
@@ -27,7 +18,6 @@ export default function Projects() {
           className="carousel-container"
           onClick={(e) => e.stopPropagation()}
         >
-          {/* <CarouselComponent /> */}
           <Carousel className="carousel">
             <video className="video" controls>
               <source src={require(`${images[2]}`)} type="video/mp4" />
