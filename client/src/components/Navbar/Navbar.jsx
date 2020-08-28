@@ -25,8 +25,16 @@ export default function Navbar(props) {
         }
       }
 
-      if (window.innerWidth < 600) {
-        if (scrolled < 600 || (scrolled > 1700 && scrolled < 3400)) {
+      if (window.innerWidth < 600 && window.innerWidth > 450) {
+        if (scrolled < 600 || (scrolled > 2000 && scrolled < 3500)) {
+          setScrollState(true);
+        } else {
+          setScrollState(false);
+        }
+      }
+
+      if (window.innerWidth < 450) {
+        if (scrolled < 100 || (scrolled > 1900 && scrolled < 3400)) {
           setScrollState(true);
         } else {
           setScrollState(false);

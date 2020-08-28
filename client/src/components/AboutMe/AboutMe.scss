@@ -15,13 +15,10 @@ $p6: #225cb2;
   min-height: 80vh;
   color: black;
   margin-top: 100vh;
-  margin-bottom: 4rem;
 
-  .card {
+  .card-list {
     // border: 1px solid red;
     padding-top: 1rem;
-    padding-bottom: 2rem;
-    // background-color: $bg-primary;
     p {
       font-family: Verdana, Geneva, Tahoma, sans-serif;;
       padding: 0rem 1rem;
@@ -29,6 +26,25 @@ $p6: #225cb2;
       line-height: 1.2;
       margin: 0;
 
+    }
+
+    .small {
+      padding: 0.2rem;
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .AboutMe {
+    .card-list {
+      p {
+        padding-bottom: 1rem;
+      }
     }
   }
 }

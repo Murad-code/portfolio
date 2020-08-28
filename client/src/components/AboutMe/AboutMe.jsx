@@ -7,8 +7,8 @@ export default function AboutMe() {
       <div className="section-title">
         <h1>About Me</h1>
       </div>
-      <div className="card">
-        <div className="WhoAmI">
+      <div className="card-list">
+        <div className="WhoAmI card small">
           <h3>Who Am I?</h3>
           <p>
             I'm an aspiring full stack developer who enjoys building
@@ -24,7 +24,7 @@ export default function AboutMe() {
             structures and algorithms which I will be expanding on this year.
           </p>
         </div>
-        <div className="PersonalStudies">
+        <div className="PersonalStudies card small">
           <h3>Personal Studies</h3>
           <p>
             Aside from university studies, I have been focused on developing my
@@ -42,7 +42,7 @@ export default function AboutMe() {
             example creating a binary search tree visualiser.
           </p>
         </div>
-        <div className="Future">
+        <div className="Future card small">
           <h3>What I want to learn next</h3>
           <p>
             Ideally, I would like to work on an android app using Java in order
