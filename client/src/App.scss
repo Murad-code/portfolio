@@ -16,6 +16,7 @@ $p6: #225CB2;
   text-align: center;
 
   height: 100vh;
+  overflow-x: hidden;
   overflow-y: scroll;
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
@@ -76,10 +77,13 @@ body {
     padding-left: 6rem;
     padding-right: 1rem;
   }
-  .navbar-home {
-    width: 2rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .section {
+    padding-left: 1rem;
   }
-  .navbar { 
-    width: 2rem;
+  .navbar {
+    width: 5rem;
   }
 }

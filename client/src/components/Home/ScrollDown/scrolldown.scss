@@ -1,3 +1,4 @@
+
 .scrolldown-container {
   margin-top: 10rem;
   // Change to 5rem for mobile
@@ -49,5 +50,17 @@
   .scrolldown-container {
     margin-top: 5rem;
     margin-left: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .scrolldown-container {
+    margin-top: 4rem;
+    margin-left: 0;
+  }
+  .arrows-animation {
+    .span {
+      margin: -5px;
+    }
   }
 }

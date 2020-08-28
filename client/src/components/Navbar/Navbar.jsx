@@ -41,9 +41,6 @@ export default function Navbar(props) {
   return (
     <nav className={scrollState ? "navbar-home" : "navbar"}>
       <ul className="navbar-nav">
-        <li className="logo">
-          <div></div>
-        </li>
         <li className="nav-item">
           <a href="#Home" className="nav-link">
             <HomeIcon />
