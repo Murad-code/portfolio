@@ -87,11 +87,13 @@ $p6: #225cb2;
         background-color: white;
         border-radius: 0.5rem 0.5rem 0 0;
         text-align: center;
+        font-weight: 500;
       }
 
       .project-description {
         // border: 1px solid pink;
         text-align: left;
+        padding: .5rem .5rem;
         padding-left: 1rem;
         overflow: scroll;
       }
