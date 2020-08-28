@@ -17,7 +17,7 @@ $p6: #225cb2;
   margin-top: 100vh;
 
   .card {
-    min-height: 80vh;
+    min-height: 70vh;
     padding: 1rem 0;
     p {
       font-family: Verdana, Geneva, Tahoma, sans-serif;;
@@ -25,6 +25,13 @@ $p6: #225cb2;
       text-align: left;
       line-height: 1.2;
       margin: 0;
+    }
+
+    h3 {
+      // margin-top: 5%;
+      // &:first-child {
+      //   margin-top: 0;
+      // }
     }
   }
 
