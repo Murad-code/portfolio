@@ -1,14 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./AboutMe.scss";
 
 export default function AboutMe() {
+  let listener = null;
+  const [size, setSize] = useState(window.innerWidth)
+  const [card, setCard] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setCard(true);
+      } else {
+        setCard(false);
+      }
+    }
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  }, [])
+
   return (
     <div id="AboutMe" className="AboutMe section">
       <div className="section-title">
         <h1>About Me</h1>
       </div>
-      <div className="card-list">
-        <div className="WhoAmI card small">
+      <div className={card ? "card-list" : "card"}>
+        <div className={card ? "WhoAmI card small" : "WhoAmI"}>
           <h3>Who Am I?</h3>
           <p>
             I'm an aspiring full stack developer who enjoys building
@@ -24,7 +41,7 @@ export default function AboutMe() {
             structures and algorithms which I will be expanding on this year.
           </p>
         </div>
-        <div className="PersonalStudies card small">
+        <div className={card ? "PersonalStudies card small" : "PersonalStudies"}>
           <h3>Personal Studies</h3>
           <p>
             Aside from university studies, I have been focused on developing my
@@ -42,7 +59,7 @@ export default function AboutMe() {
             example creating a binary search tree visualiser.
           </p>
         </div>
-        <div className="Future card small">
+        <div className={card ? "Future card small" : "Future"}>
           <h3>What I want to learn next</h3>
           <p>
             Ideally, I would like to work on an android app using Java in order

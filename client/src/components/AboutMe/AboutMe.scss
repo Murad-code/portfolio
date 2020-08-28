@@ -16,6 +16,18 @@ $p6: #225cb2;
   color: black;
   margin-top: 100vh;
 
+  .card {
+    min-height: 80vh;
+    padding: 1rem 0;
+    p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;;
+      padding: 0rem 1rem;
+      text-align: left;
+      line-height: 1.2;
+      margin: 0;
+    }
+  }
+
   .card-list {
     // border: 1px solid red;
     padding-top: 1rem;
@@ -26,6 +38,11 @@ $p6: #225cb2;
       line-height: 1.2;
       margin: 0;
 
+    }
+    
+    .card {
+      min-height: 0;
+      padding: 0;
     }
 
     .small {
