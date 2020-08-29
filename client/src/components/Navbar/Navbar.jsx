@@ -6,6 +6,7 @@ import { ReactComponent as AboutMeIcon } from "./icons/AboutMe.svg";
 import { ReactComponent as MySkillsIcon } from "./icons/MySkills.svg";
 import { ReactComponent as ProjectsIcon } from "./icons/Projects.svg";
 import { ReactComponent as ContactIcon } from "./icons/Contact.svg";
+import { ReactComponent as GitHubIcon } from "./icons/GitHub.svg";
 
 export default function Navbar(props) {
   let listener = null;
@@ -79,16 +80,12 @@ export default function Navbar(props) {
             <span className="link-text">Contact</span>
           </a>
         </li>
-        {/* <li className="nav-item">
-            <a href="#GitHub" className="nav-link">
-            </a>
+        <li className="nav-item">
+          <a href="https://github.com/Murad-code?tab=repositories" className="nav-link">
+            <GitHubIcon />
             <span className="link-text">GitHub</span>
-          </li>
-          <li className="nav-item">
-            <a href="#Email" className="nav-link">
-            </a>
-            <span className="link-text">Email</span>
-          </li> */}
+          </a>
+        </li>
       </ul>
     </nav>
   );

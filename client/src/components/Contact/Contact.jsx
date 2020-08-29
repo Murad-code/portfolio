@@ -1,14 +1,12 @@
 import React from "react";
-import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import TextField from "@material-ui/core/TextField";
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import { useForm } from "react-hook-form";
-// import Axios from 'axios';
+import "./Contact.scss";
+import { ReactComponent as EmailIcon } from "./email.svg";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -16,10 +14,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
   },
   form: {
     width: "100%", // Fix IE 11 issue.
@@ -34,7 +28,7 @@ export default function SignIn() {
   const classes = useStyles();
   const { register, handleSubmit } = useForm();
   const onSubmit = async (data) => {
-    // const isSuccess = await Axios.post('http://localhost:3030/api/email', data);
+
   };
 
   const sendEmail = (e) => {
@@ -42,16 +36,16 @@ export default function SignIn() {
   };
 
   return (
-    <div id="Contact" className="Contact section card">
-      <Container component="main" maxWidth="xs">
+    <div id="Contact" className="Contact section">
+      <div className="section-title">
+        <h1>Contact</h1>
+      </div>
+      <Container className="card" component="main">
         <CssBaseline />
         <div className={classes.paper}>
-          <Avatar className={classes.avatar}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Contact Me
-          </Typography>
+          <EmailIcon className="icon" />
+
+          <h2>Let's Get In Touch</h2>
           <form
             className={classes.form}
             noValidate
@@ -66,6 +60,7 @@ export default function SignIn() {
               inputRef={register}
               required
               fullWidth
+              autoComplete='off'
               id="name"
               name="name"
               label="Name"
@@ -76,6 +71,7 @@ export default function SignIn() {
               inputRef={register}
               required
               fullWidth
+              autoComplete='off'
               id="email"
               name="email"
               label="Email Address"
@@ -85,6 +81,7 @@ export default function SignIn() {
               inputRef={register}
               required
               fullWidth
+              autoComplete='off'
               variant="outlined"
               multiline="true"
               id="message"
