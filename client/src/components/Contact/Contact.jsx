@@ -37,6 +37,10 @@ export default function SignIn() {
     // const isSuccess = await Axios.post('http://localhost:3030/api/email', data);
   };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div id="Contact" className="Contact section card">
       <Container component="main" maxWidth="xs">
@@ -51,11 +55,12 @@ export default function SignIn() {
           <form
             className={classes.form}
             noValidate
-            // onSubmit={handleSubmit(onSubmit)}
+            // onSubmit={sendEmail}
             name="contact"
-            action="contact"
-            method="POST"
+            method="post"
           >
+            <input type="hidden" name="form-name" value="contact" />
+
             <TextField
               margin="normal"
               inputRef={register}
