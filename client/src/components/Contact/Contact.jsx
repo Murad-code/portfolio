@@ -54,7 +54,7 @@ export default function SignIn() {
             // onSubmit={handleSubmit(onSubmit)}
             name="contact"
             netlify
-            method="POST" data-netlify="true"
+            action="POST" data-netlify="true"
           >
             <TextField
               margin="normal"
