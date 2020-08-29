@@ -53,8 +53,7 @@ export default function SignIn() {
             noValidate
             // onSubmit={handleSubmit(onSubmit)}
             name="contact"
-            netlify
-            action="POST" data-netlify="true"
+            method="POST" data-netlify="true" action="POST"
           >
             <TextField
               margin="normal"
