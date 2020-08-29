@@ -49,11 +49,11 @@ export default function SignIn() {
             Contact Me
           </Typography>
           <form
-            className={classes.form}
+            // className={classes.form}
             noValidate
             // onSubmit={handleSubmit(onSubmit)}
             name="contact"
-            method="POST" data-netlify="true" action="POST"
+            method="POST" netlify
           >
             <input
               margin="normal"
