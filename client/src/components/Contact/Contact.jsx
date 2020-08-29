@@ -49,13 +49,14 @@ export default function SignIn() {
             Contact Me
           </Typography>
           <form
-            // className={classes.form}
+            className={classes.form}
             noValidate
             // onSubmit={handleSubmit(onSubmit)}
             name="contact"
-            method="POST" netlify
+            action="contact"
+            method="POST"
           >
-            <input
+            <TextField
               margin="normal"
               inputRef={register}
               required
@@ -65,7 +66,7 @@ export default function SignIn() {
               label="Name"
               // autoFocus note: don't use causes automatically scrolling down to contact ignoring home page
             />
-            <input
+            <TextField
               margin="normal"
               inputRef={register}
               required
@@ -74,7 +75,7 @@ export default function SignIn() {
               name="email"
               label="Email Address"
             />
-            <input
+            <TextField
               margin="normal"
               inputRef={register}
               required
