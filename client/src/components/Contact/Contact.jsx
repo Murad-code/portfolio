@@ -55,7 +55,7 @@ export default function SignIn() {
             name="contact"
             method="POST" data-netlify="true" action="POST"
           >
-            <TextField
+            <input
               margin="normal"
               inputRef={register}
               required
@@ -65,7 +65,7 @@ export default function SignIn() {
               label="Name"
               // autoFocus note: don't use causes automatically scrolling down to contact ignoring home page
             />
-            <TextField
+            <input
               margin="normal"
               inputRef={register}
               required
@@ -74,7 +74,7 @@ export default function SignIn() {
               name="email"
               label="Email Address"
             />
-            <TextField
+            <input
               margin="normal"
               inputRef={register}
               required
