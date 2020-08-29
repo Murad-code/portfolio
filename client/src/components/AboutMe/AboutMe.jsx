@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./AboutMe.scss";
 
 export default function AboutMe() {
-  let listener = null;
-  const [size, setSize] = useState(window.innerWidth)
   const [card, setCard] = useState(false);
   useEffect(() => {
     const handleResize = () => {
