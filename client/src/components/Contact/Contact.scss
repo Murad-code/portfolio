@@ -14,34 +14,34 @@ $bg-primary: #014972;
       margin-top: 2rem;
     }
 
-    .makeStyles-paper-1 {
-      padding-top: 3rem;
-      padding-bottom: 6rem;
-      margin-top: 0;
+  //   .makeStyles-paper-1 {
+  //     padding-top: 3rem;
+  //     padding-bottom: 6rem;
+  //     margin-top: 0;
 
-      .Mui-focused {
-        color: $bg-primary;
-      }
-      .MuiInput-underline:after {
-        border-bottom: 2px solid $bg-primary;
-      }
+  //     .Mui-focused {
+  //       color: $bg-primary;
+  //     }
+  //     .MuiInput-underline:after {
+  //       border-bottom: 2px solid $bg-primary;
+  //     }
 
-      .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
-        border-color: $bg-primary;
-      }
+  //     .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  //       border-color: $bg-primary;
+  //     }
 
-      .makeStyles-form-2 {
-        width: 80%;
-      }
+  //     .makeStyles-form-2 {
+  //       width: 80%;
+  //     }
 
-      .makeStyles-form-3 {
-        padding: 0rem 10vw;
-      }
-    }
-    .MuiButton-containedPrimary {
-      background-color: $bg-primary;
-      // padding: 0rem 4rem;
-    }
+  //     .makeStyles-form-3 {
+  //       padding: 0rem 10vw;
+  //     }
+  //   }
+  //   .MuiButton-containedPrimary {
+  //     background-color: $bg-primary;
+  //     // padding: 0rem 4rem;
+  //   }
   }
 }
 
