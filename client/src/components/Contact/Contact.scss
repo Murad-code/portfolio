@@ -4,6 +4,8 @@ $bg-primary: #014972;
   // border: 4px solid green;
   margin-bottom: 5rem;
   .card {
+    min-height: 70vh;
+
     .icon {
       margin-top: 1rem;
       filter: grayscale(100%) opacity(0.7);
@@ -26,6 +28,7 @@ $bg-primary: #014972;
     margin-top: 0;
 
     .card {
+      min-height: 60vh;
       form {
         margin: 0;
       }
