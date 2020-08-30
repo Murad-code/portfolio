@@ -119,7 +119,7 @@ $transition-speed: 400ms;
         }
         &:hover {
           filter: grayscale(0%) opacity(1);
-          background-color: #003554;
+          background-color: $bg-primary;
           color: $bg-secondary;
           svg {
             fill: $bg-secondary;
