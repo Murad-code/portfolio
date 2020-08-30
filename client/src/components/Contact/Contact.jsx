@@ -30,7 +30,7 @@ export default function SignIn() {
         <h1>Contact</h1>
       </div>
       <ThemeProvider theme={theme}>
-        <Container className="card" component="main">
+        <Container className="card" >
           <div>
             <EmailIcon className="icon" />
 
