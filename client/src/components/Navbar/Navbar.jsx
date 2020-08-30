@@ -81,7 +81,7 @@ export default function Navbar(props) {
           </a>
         </li>
         <li className="nav-item">
-          <a href="https://github.com/Murad-code?tab=repositories" className="nav-link">
+          <a href="https://github.com/Murad-code?tab=repositories" target="_blank" className="nav-link">
             <GitHubIcon />
             <span className="link-text">GitHub</span>
           </a>
