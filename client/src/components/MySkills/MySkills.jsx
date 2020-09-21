@@ -23,6 +23,8 @@ export default function MySkills() {
                 <li>SASS</li>
                 <li>React.js</li>
                 <li>React Hooks</li>
+                <li>Material UI</li>
+                <li>Java Swing</li>
                 <li>Handlebars</li>
               </ul>
             </div>
@@ -39,6 +41,8 @@ export default function MySkills() {
                 <li>SQLite</li>
                 <li>MongoDB</li>
                 <li>Express</li>
+                <li>Postman</li>
+                <li>Axios</li>
                 <li>Using API’s (Google, Spotify, Yelp)</li>
               </ul>
             </div>
