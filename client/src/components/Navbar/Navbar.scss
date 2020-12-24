@@ -21,6 +21,11 @@ $transition-speed: 400ms;
     background-color $transition-speed ease-in,
     margin-top $transition-speed ease-in;
   overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
   &:hover {
     opacity: 1;
     width: 12rem;
@@ -82,6 +87,11 @@ $transition-speed: 400ms;
     background-color $transition-speed ease-in,
     margin-top $transition-speed ease-in;
   overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
   &:hover {
     opacity: 1;
     width: 12rem;

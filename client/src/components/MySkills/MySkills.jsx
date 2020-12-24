@@ -38,8 +38,8 @@ export default function MySkills() {
                 <li>C#</li>
                 <li>Node.js</li>
                 <li>SQL</li>
-                <li>SQLite</li>
                 <li>MongoDB</li>
+                <li>AWS</li>
                 <li>Express</li>
                 <li>Postman</li>
                 <li>Axios</li>
@@ -54,6 +54,7 @@ export default function MySkills() {
               <ul className="list">
                 <li>SPSS</li>
                 <li>Microsoft Azure</li>
+                <li>Jira</li>
                 <li>Git</li> 
                 <li>GitHub</li>
                 <li>MVC Architecture</li>
