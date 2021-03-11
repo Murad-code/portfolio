@@ -35,9 +35,10 @@ export default function MySkills() {
             <div className="skills-text">
               <ul className="list">
                 <li>Java</li>
+                <li>Java Spring Boot</li>
                 <li>C#</li>
                 <li>Node.js</li>
-                <li>SQL</li>
+                <li>MySQL</li>
                 <li>MongoDB</li>
                 <li>AWS</li>
                 <li>Express</li>
@@ -53,7 +54,6 @@ export default function MySkills() {
             <div className="skills-text">
               <ul className="list">
                 <li>SPSS</li>
-                <li>Microsoft Azure</li>
                 <li>Jira</li>
                 <li>Git</li> 
                 <li>GitHub</li>
